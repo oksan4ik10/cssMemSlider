@@ -57,13 +57,16 @@ img{
 .words{
   
     display: flex;
-    translate: .5s ease-in-out;
+    
+    transition: .5s ease-in-out;
+   
+    font-size: 2em;
 }
  p{
-    font-size: 2em;
     width: 100%;
     flex-grow: 0;
     flex-shrink: 0;
+
 }
 .labels{
     align-self: end;
