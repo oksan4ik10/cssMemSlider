@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(95, 181, 142, 0.4);
+}
+input[type=radio]{
+    height: 0;
+    width: 0;
+    display: block;
+    visibility: hidden;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 10px;
+    box-sizing: content-box;
+}
+.slider{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.images{
+    grid-column: 1/3;
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+    width: 400%;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(219, 254, 253, 0.6);
+
+}
+.image{
+    flex-grow: 0;
+    width: 100%;
+    height: 100%;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.text{
+    width: 200px;
+    overflow: hidden;
+  
+}
+.words{
+  
+    display: flex;
+}
+ p{
+    font-size: 2em;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.labels{
+    align-self: end;
+    justify-self: end;
+    display: flex;
+
+}
+.labels label:not(:last-child){
+    margin-right: 10px;
+
+}
+.labels label{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:rgb(83, 87, 155);
+    border: 2px solid rgb(83, 87, 155);
+    transition: .3s ease;
+}
+.labels label:hover{
+    cursor: pointer;
+    background-color:transparent;
+}
