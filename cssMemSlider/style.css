@@ -35,7 +35,7 @@ input[type=radio]{
     align-items: center;
     justify-content: center;
     background-color:rgba(219, 254, 253, 0.6);
-    transition: .5s ease-in-out;
+    transition: .8s ease-in-out;
 
 }
 .image{
@@ -55,11 +55,8 @@ img{
   
 }
 .words{
-  
     display: flex;
-    
-    transition: .5s ease-in-out;
-   
+    transition: .8s ease-in-out;
     font-size: 2em;
 }
  p{
@@ -80,6 +77,11 @@ img{
 }
 .labels label{
     display: block;
+    width: 20px;
+    height: 20px;
+
+}
+.labels label .circle{
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -91,6 +93,7 @@ img{
     cursor: pointer;
     background-color:transparent;
 }
+
 
 #r2:checked+#r3+#r4+.images{
     transform: translateX(-25%);
@@ -110,4 +113,19 @@ img{
 }
 #r4:checked+.images+.text>.words{
     transform: translateX(-300%);
+}
+#r1:checked+#r2+#r3+#r4+.images+.text+.labels>label:nth-child(1)>.circle{
+     background-color:transparent;
+}
+#r2:checked+#r3+#r4+.images+.text+.labels>label:nth-child(2)>.circle{
+     background-color:transparent;
+   
+}
+#r3:checked+#r4+.images+.text+.labels>label:nth-child(3)>.circle{
+     background-color:transparent;
+    
+}
+#r4:checked+.images+.text+.labels>label:nth-child(4)>.circle{
+     background-color:transparent;
+
 }
